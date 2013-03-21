@@ -4,10 +4,10 @@ require_once 'UniPAY.php';
 
 try {
 	$unipay = new UniPAY();
-	$unipay->setOptions('', '', '');
+	$unipay->setOptions('m1', 'm2', 'm3');
 
 	$result = $unipay->startAttachAccount(
-		'', '00000000001', 'someuser112', '7007000', 'TestName', 'TestSurename'
+		'x1', 'x2', 'x3', 'x4', 'x5', 'x6'
 	);
 
 	var_dump($result);
