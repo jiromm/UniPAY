@@ -2,7 +2,6 @@
 
 require_once 'IUniPAY.php';
 require_once 'LocalException.php';
-require_once 'HelperClasses.php';
 
 /**
  * @author Aram Baghdasaryan <aram.baghdasaryan@gmail.com>
@@ -17,15 +16,10 @@ require_once 'HelperClasses.php';
  * require_once 'UniPAY.php';
  *
  * try {
- *      $unipay = new UniPAY('7030789', 'EX5MVawtbyA6', 'https://www.unipay.ge/API/TESTUPCONNECT/?WSDL');
+ *      $unipay = new UniPAY('', '', '');
  *
  *      $result = $unipay->startAttachAccount(
- *          mt_rand(),
- *          '00000000001',
- *          'someuser112',
- *          '7007000',
- *          'TestName',
- *          'TestSurename'
+ *          '', '', '', '', '', ''
  *      );
  *
  *      var_dump($result);
