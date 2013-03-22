@@ -9,14 +9,9 @@ Usage example:
 require_once 'UniPAY.php';
 
 try {
-    $unipay = new UniPAY('7030789', 'EX5MVawtbyA6', 'https://www.unipay.ge/API/TESTUPCONNECT/?WSDL');
+    $unipay = new UniPAY('', '', '');
     $result = $unipay->startAttachAccount(
-        mt_rand(),
-        '00000000001',
-        'someuser112',
-        '7007000',
-        'TestName',
-        'TestSurename'
+        '', '', '', '', '', ''
     );
 
     var_dump($result);
