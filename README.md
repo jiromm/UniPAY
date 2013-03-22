@@ -5,9 +5,9 @@ UniPAY PaymentSystem integration library
 
 Usage example:
 
+```php
 require_once 'UniPAY.php';
 
-```php
 try {
     $unipay = new UniPAY('7030789', 'EX5MVawtbyA6', 'https://www.unipay.ge/API/TESTUPCONNECT/?WSDL');
     $result = $unipay->startAttachAccount(
